@@ -1,0 +1,105 @@
+@import url('https://www.hcsung.com/style.css');
+
+:root {
+    --color-font: #eaeaea;
+    --color-bg: hsl(0, 0%, 8%);
+    --green: 80, 100%, 35%;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-font);
+}
+
+h1 {
+    margin: .5em 0;
+    font-size: 24pt;
+}
+
+a {
+    color: var(--color-font);
+}
+
+a:hover {
+    color: hsla(50, 100%, 50%, 90%);
+}
+
+#face {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2% 4%;
+    padding-bottom: 0;
+}
+
+.button {
+    background-color: hsla(var(--green), 70%);
+    font-weight: bold;
+    border-radius: 2em;
+    padding: 3px;
+    text-align: center;
+}
+
+.icon.vol {
+    background-image: url("vol.svg"), url("mute.svg");
+}
+
+#play.playing {
+    background-color: hsla(30, 100%, 40%, 80%);
+}
+
+#eq {
+    font-size: 10pt;
+}
+
+#eq td,
+#eq th {
+    width: 35px;
+    height: 35px;
+    border: solid 3px var(--color-bg);
+    background: hsl(0, 0%, 11%);
+}
+
+#eq th {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#eq td.end {
+    background-color: var(--color-bg);
+    min-height: 9em;
+}
+
+#eq td.visible {
+    opacity: 0;
+}
+
+#eq tr:nth-child(2) {
+    background-color: hsla(var(--green), 20%);
+}
+
+#eq tr:nth-child(3) {
+    background-color: hsla(var(--green), 30%);
+}
+
+#eq tr:nth-child(4) {
+    background-color: hsla(var(--green), 40%);
+}
+
+#eq tr:nth-child(5) {
+    background-color: hsla(var(--green), 50%);
+}
+
+#eq tr:nth-child(6) {
+    background-color: hsla(var(--green), 60%);
+}
+
+#eq tr:nth-child(7) {
+    background-color: hsla(75, 100%, 40%, 60%);
+}
+
+#eq tr:nth-child(8) {
+    background-color: hsla(90, 70%, 80%, 80%);
+}
+
+#eq tr:nth-child(9) {
+    background-color: hsla(90, 40%, 90%, 80%);
+}
